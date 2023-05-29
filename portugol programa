@@ -1,0 +1,40 @@
+# Portugol-2905-Notas
+programa {
+  funcao inicio() {
+    cadeia alunos[50]
+    
+    inteiro notasp1[50]
+    inteiro notasp2[50]
+    inteiro notasp3[50]
+    inteiro notasp4[50]
+
+    para (inteiro cont = 0; cont <= 49; cont++) {
+      escreva("Qual nome do aluno? \n Digite Z para sair. \n")
+      leia(alunos[cont])
+
+      se (alunos[cont] == "Z" ou alunos[cont] == "z") {
+       pare
+      }
+
+      escreva("Qual nota p1 do ", alunos[cont], "? \n")
+      leia(notasp1[cont])
+
+      escreva("Qual nota p2 do ", alunos[cont], "? \n")
+      leia(notasp1[cont])
+
+      escreva("Qual nota p3 do ", alunos[cont], "? \n")
+      leia(notasp1[cont])
+
+      escreva("Qual nota p4 do ", alunos[cont], "? \n")
+      leia(notasp1[cont])
+
+      escreva("Média do aluno ", alunos[cont] ," é de ", (notasp1[cont] + notasp2[cont] + notasp3[cont] + notasp4[cont]) / 4, "\n")
+
+    }
+
+
+
+
+
+  }
+}
